@@ -4,17 +4,22 @@ public class Main
 {
 	public static void main(String[] args)
 	{
-		System.out.println("Hello World!");
+		int X[]=new int[50];
+		Scanner scanner=new Scanner(System.in);
+		System.out.print("How may elements are there? ");
+		int n=scanner.nextInt();
+		System.out.print("​Enter elements : ​"); 
 
-		Scanner input = new Scanner(System.in);
+		for (int i=0;i < n;i++)
+		{
+			X[i] = scanner.nextInt();
+		}
 
-		System.out.print("Enter a number: ");
-		double number1 = input.nextDouble();
-
-		System.out.print("Enter second number: ");
-		double number2 = input.nextDouble();
-
-		double product = number1 * number2;
-		System.out.printf("The product of both numbers is: %f", product);
+		int sum=0;
+		for(int i=0;i<n;i++){
+			sum+=X[i];
+		}
+		float mean=(float)sum/n;
+		System.out.println("Mean of the series is :"+mean);
 	}
 }
