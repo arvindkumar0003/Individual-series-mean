@@ -12,7 +12,7 @@ void main(){
 	//entering values of x
 	cout<<"Enter elements : ";
 	int i;
-	for( i = 0 ; i < n ; i++){
+	for( i = 0 ; i < n ; i++ ){
 		cin>> x [ i ];
 	}
 	
@@ -23,7 +23,7 @@ void main(){
 	}
 	
 	//calculating fx
-	for( i = 0 ; i < n ; i++){
+	for( i = 0 ; i < n ; i++ ){
 		fx[i] = f [ i ] * x [ i ];
 	}
 	
